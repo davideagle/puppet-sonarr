@@ -1,0 +1,25 @@
+{
+  "name": "puppet-sonarr",
+  "version": "0.0.1",
+  "author": "Michael MacLeod",
+  "license": "GPLv3",
+  "summary": "Installs, configures, and manages Sonarr",
+  "source": "https://github.com/MacLeodMike/puppet-sonarr",
+  "project_page": "https://github.com/MacLeodMike/puppet-sonarr",
+  "issues_url": "https://github.com/MacLeodMike/puppet-sonarr/issues",
+  "tags": ["sonarr"],
+  "dependencies": [
+    { "name": "puppetlabs-stdlib", "version_range": ">= 1.0.0" },
+    { "name": "camptocamp-systemd", "version_range": ">= 0.4.0" }
+  ],
+  "data_provider": "hiera",
+  "requirements": [
+    { "name": "puppet", "version_requirement": ">=3.0.0 <5.0.0" }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [ "16.04" ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+---
+sonarr::package_ensure: 'present'
+sonarr::service_name: 'sonarr'
+sonarr::service_enable: true
+sonarr::service_ensure: 'running'
+sonarr::service_manage: true
