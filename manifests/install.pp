@@ -4,6 +4,7 @@ class sonarr::install inherits sonarr {
   apt::source { 'sonarr':
     location => 'http://apt.sonarr.tv/',
     repos    => 'main',
+    release  => 'master',
     key      => {
       'id'     => 'FDA5DFFC',
       'server' => 'keyserver.ubuntu.com',
