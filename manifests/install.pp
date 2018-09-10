@@ -20,7 +20,8 @@ class sonarr::install inherits sonarr {
 
   file { '/opt/NzbDrone/NzbDrone.exe':
     ensure => file,
-    mode => '0744',
+    owner  => "sonarr",
+    mode   => '0744',
   }
 
   package { ['nzbdrone']:
