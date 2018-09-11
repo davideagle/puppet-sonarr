@@ -7,10 +7,14 @@ User=<%= $sonarr::user %>
 Group=<%= $sonarr::group %>
 
 Type=simple
-ExecStart=/opt/NzbDrone/NzbDrone.exe --debug /opt/NzbDrone/NzbDrone.exe -nobrowser
+ExecStart=/usr/bin/mono /opt/NzbDrone/NzbDrone.exe -nobrowser
 TimeoutStopSec=20
 KillMode=process
 Restart=on-failure
 
 [Install]
 WantedBy=multi-user.target
+
+[Unit]
+Description=Sonarr Daemon
+After=network.target
